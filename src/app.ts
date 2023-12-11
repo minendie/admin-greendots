@@ -12,7 +12,7 @@ import componentLoader from './admin/component-loader.js';
 // import { Database, Resource } from '@adminjs/typeorm' // or any other adapter
 
 // AdminJS.registerAdapter({ Database, Resource })
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 const start = async () => {
   const app = express();

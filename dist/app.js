@@ -6,7 +6,7 @@ import provider from './admin/auth-provider.js';
 import options from './admin/options.js';
 import initializeDb from './db/index.js';
 import { fileURLToPath } from 'url';
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 const start = async () => {
     const app = express();
     const __filename = fileURLToPath(import.meta.url);
