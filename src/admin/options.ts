@@ -1,6 +1,8 @@
 import { AdminJSOptions } from 'adminjs';
-
+import express from 'express';
 import componentLoader from './component-loader.js';
+// import HandleRequestPage from '../page/HandleRequestPage.js';
+
 
 // import mysql from 'mysql2'
 
@@ -9,8 +11,23 @@ import componentLoader from './component-loader.js';
 const options: AdminJSOptions = {
   componentLoader,
   rootPath: '/admin',
-  resources: [],
+  // resources: [
+  //   {
+  //     resource: HandleRequestPage,
+  //     options: {
+  //       parent: { name: 'Organizer_Request', icon: 'Tasks' }, // Thay đổi tên và biểu tượng cho tab mới
+  //     },
+  //   },
+  // ],
   databases: [],
+  branding: {
+    companyName: 'Admin - GreenDots',
+    // softwareBrothers: false, // Remove the "SoftwareBrothers" label
+    logo: '/logo.png',      // Specify the path to your SVG logo
+  },
+  // resources: [
+    
+  // ],
 };
 
 export default options;
