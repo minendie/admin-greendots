@@ -7,7 +7,7 @@ import provider from './admin/auth-provider.js';
 import options from './admin/options.js';
 import initializeDb from './db/index.js';
 import { fileURLToPath } from 'url';
-import componentLoader from './admin/component-loader.js';
+// import componentLoader from './admin/component-loader.js';
 
 // import { Database, Resource } from '@adminjs/typeorm' // or any other adapter
 
@@ -22,11 +22,11 @@ const start = async () => {
   const __dirname = path.dirname(__filename);
 
   app.use(express.static(path.join(__dirname, 'public')));
-  const db = await initializeDb();
+  // const db = await initializeDb();
   
-  options.databases = [
-  db.db
-  ];
+  // options.databases = [
+  // db.db
+  // ];
   // options.databases['options']
 
   const admin = new AdminJS(options);
